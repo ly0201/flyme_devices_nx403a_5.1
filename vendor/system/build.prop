@@ -29,9 +29,9 @@ ro.product.manufacturer=nubia
 ro.wifi.channels=
 ro.board.platform=msm8960
 # ro.build.product is obsolete; use ro.product.device
-ro.build.product=nx403a
+ro.build.product=NX403A
 ro.product.model=NX403A
-ro.product.device=nx403a
+ro.product.device=NX403A
 # Do not try to parse description, fingerprint, or thumbprint
 ro.build.description=cm_nx403a-userdebug 5.1.1 LMY48B 855ae35cf4 test-keys
 ro.build.fingerprint=nubia/cm_nx403a/nx403a:5.1.1/LMY48B/855ae35cf4:userdebug/test-keys
