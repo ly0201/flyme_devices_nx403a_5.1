@@ -1288,7 +1288,7 @@
     .line 408
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mTargetUserId:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mShowDialogs:Z
 
     .line 414
     const/4 v0, 0x2
@@ -1340,7 +1340,7 @@
     .line 509
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDidDexOpt:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNextIsolatedProcessUid:I
 
     .line 514
     const/4 v0, 0x0
@@ -1406,12 +1406,12 @@
     .line 595
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mConfigurationSeq:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLruProcessActivityStart:I
 
     .line 601
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mCurResumedUid:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLruProcessServiceStart:I
 
     .line 606
     new-instance v0, Ljava/util/ArrayList;
@@ -1432,12 +1432,12 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastIdleTime:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastFullPssTime:J
 
     .line 622
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mProfileType:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mFullPssPending:Z
 
     .line 644
     new-instance v0, Landroid/util/SparseArray;
@@ -1556,7 +1556,7 @@
     .line 931
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAllowLowerMemLevel:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mConfigurationSeq:I
 
     .line 947
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1575,72 +1575,72 @@
     .line 955
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mShuttingDown:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mProcessesReady:Z
 
     .line 956
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mThumbnailWidth:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mSystemReady:Z
 
     .line 957
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumNonCachedProcs:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mBooting:Z
 
     .line 958
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumServiceProcs:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mCallFinishBooting:Z
 
     .line 959
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNextIsolatedProcessUid:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mBootAnimationComplete:Z
 
     .line 960
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->GL_ES_VERSION:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mWaitingUpdate:Z
 
     .line 961
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mProcessesReady:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDidUpdate:Z
 
     .line 962
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mSamplingInterval:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mOnBattery:Z
 
     .line 963
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mSafeMode:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mLaunchWarningShown:Z
 
     .line 998
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mThumbnailHeight:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mSleeping:Z
 
     .line 1004
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mSleeping:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mRunningVoice:Z
 
     .line 1009
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLruProcessServiceStart:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mWakefulness:I
 
     .line 1017
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mCheckedForSetup:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLockScreenShown:I
 
     .line 1022
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mTestPssMode:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mShuttingDown:Z
 
     .line 1027
     const/4 v0, 0x0
@@ -1650,59 +1650,59 @@
     .line 1032
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mCurrentUserId:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLruSeq:I
 
     .line 1038
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mFactoryTest:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumNonCachedProcs:I
 
     .line 1044
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDidUpdate:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumCachedHiddenProcs:I
 
     .line 1050
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mFullPssPending:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumServiceProcs:I
 
     .line 1051
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDebugTransient:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNewNumAServiceProcs:I
 
     .line 1052
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDidAppSwitch:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNewNumServiceProcs:I
 
     .line 1060
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLruSeq:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAllowLowerMemLevel:Z
 
     .line 1066
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mBooting:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastMemoryLevel:I
 
     .line 1077
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastMemUsageReportTime:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastIdleTime:J
 
     .line 1082
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mPreviousProcessVisibleTime:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLowRamTimeSinceLastIdle:J
 
     .line 1087
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLowRamTimeSinceLastIdle:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLowRamStartTime:J
 
     .line 1092
     const/4 v0, 0x0
@@ -1712,7 +1712,7 @@
     .line 1093
     const/4 v0, -0x1
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAlwaysFinishActivities:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mCurResumedUid:I
 
     .line 1100
     new-instance v0, Lcom/android/internal/app/ProcessMap;
@@ -1724,7 +1724,7 @@
     .line 1119
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mTrackingAssociations:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mTestPssMode:Z
 
     .line 1121
     const/4 v0, 0x0
@@ -1734,12 +1734,12 @@
     .line 1122
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mWaitingUpdate:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mWaitForDebugger:Z
 
     .line 1123
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mOrigWaitForDebugger:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mDebugTransient:Z
 
     .line 1124
     const/4 v0, 0x0
@@ -1749,12 +1749,12 @@
     .line 1125
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mShowDialogs:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mOrigWaitForDebugger:Z
 
     .line 1126
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNewNumAServiceProcs:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAlwaysFinishActivities:Z
 
     .line 1127
     const/4 v0, 0x0
@@ -1774,17 +1774,17 @@
     .line 1132
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastNumProcesses:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mSamplingInterval:I
 
     .line 1133
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNewNumServiceProcs:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAutoStopProfiler:Z
 
     .line 1134
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastMemoryLevel:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mProfileType:I
 
     .line 1135
     const/4 v0, 0x0
@@ -1856,7 +1856,7 @@
     .line 1170
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLowRamStartTime:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastWriteTime:J
 
     .line 1176
     new-instance v0, Landroid/os/UpdateLock;
@@ -1870,27 +1870,27 @@
     .line 1181
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mNumCachedHiddenProcs:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mBooted:Z
 
     .line 1183
     sget v0, Lcom/android/server/am/ProcessList;->MAX_CACHED_APPS:I
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mHasRecents:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimit:I
 
     .line 1184
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastAddedTaskUid:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mProcessLimitOverride:I
 
     .line 1191
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mAutoStopProfiler:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mCurrentUserId:I
 
     .line 1193
     const/16 v0, -0x2710
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mLaunchWarningShown:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mTargetUserId:I
 
     .line 1196
     const/4 v0, 0x1
@@ -1915,7 +1915,7 @@
     .line 1281
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastPowerCheckRealtime:J
+    iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService;->mLastMemUsageReportTime:J
 
     .line 1935
     new-instance v0, Lcom/android/server/am/ActivityManagerService$2;
@@ -1947,7 +1947,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mBootAnimationComplete:Z
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mFactoryTest:I
 
     .line 2182
     invoke-static {}, Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread;
@@ -2164,7 +2164,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mSamplingInterval:I
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mOnBattery:Z
 
     .line 2214
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService;->mBatteryStatsService:Lcom/android/server/am/BatteryStatsService;
@@ -2258,7 +2258,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->mWakefulness:I
+    iput v0, p0, Lcom/android/server/am/ActivityManagerService;->GL_ES_VERSION:I
 
     .line 2230
     const-string v0, "1"
@@ -2273,7 +2273,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mUserIsMonkey:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ActivityManagerService;->mTrackingAssociations:Z
 
     .line 2232
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService;->mConfiguration:Landroid/content/res/Configuration;
@@ -2294,9 +2294,9 @@
 
     const/4 v1, 0x1
 
-    iput v1, v0, Landroid/content/res/Configuration;->screenWidthDp:I
+    iput v1, v0, Landroid/content/res/Configuration;->seq:I
 
-    iput-boolean v1, p0, Lcom/android/server/am/ActivityManagerService;->mAllowLowerMemLevel:Z
+    iput v1, p0, Lcom/android/server/am/ActivityManagerService;->mConfigurationSeq:I
 
     .line 2236
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService;->mProcessCpuTracker:Lcom/android/internal/os/ProcessCpuTracker;
